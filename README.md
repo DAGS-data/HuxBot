@@ -4,7 +4,13 @@
   <img src="./colibre.png" alt="HuxBot" width="200">
 </p>
 
-
+<p align="center">
+    <img src="https://img.shields.io/badge/python-≥3.11-blue" alt="Python">
+    <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
+    <a href="https://github.com/google/adk-python"><img src="https://img.shields.io/badge/Google-ADK-4285F4?style=flat&logo=google&logoColor=white" alt="Google ADK"></a>
+    <a href="https://github.com/BerriAI/litellm"><img src="https://img.shields.io/badge/LiteLLM-Powered-orange?style=flat" alt="LiteLLM"></a>
+    <img src="https://img.shields.io/badge/Arduino-Compatible-00979D?style=flat&logo=arduino&logoColor=white" alt="Arduino">
+</p>
 
 A lightweight personal AI assistant that lives in your favorite chat apps. Talk to it on **Telegram**, **Discord**, or **WhatsApp** — it can read and write files, run shell commands, search the web, and remember things across conversations.
 
