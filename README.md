@@ -1,7 +1,10 @@
+<h1 align="center">Huxbot, your personal assistant that can control your Arduino hardware</h1>
 
 <p align="center">
-  <img src="./colibre.jpg" alt="HuxBot" width="200">
+  <img src="./colibre.png" alt="HuxBot" width="200">
 </p>
+
+
 
 A lightweight personal AI assistant that lives in your favorite chat apps. Talk to it on **Telegram**, **Discord**, or **WhatsApp** — it can read and write files, run shell commands, search the web, and remember things across conversations.
 
