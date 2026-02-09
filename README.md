@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/Arduino-Compatible-00979D?style=flat&logo=arduino&logoColor=white" alt="Arduino">
 </p>
 
-A lightweight personal AI assistant that lives in your favorite chat apps. Talk to it on **Telegram**, **Discord**, or **WhatsApp** — it can read and write files, run shell commands, search the web, and remember things across conversations.
+A lightweight personal AI assistant designed to run on edge devices like the **Arduino UNO Q**, **Raspberry Pi**, and **Orange Pi**. You don't need a Mac Mini — just a small board with 2 GB of RAM running Debian Linux is enough. Talk to it on **Telegram**, **Discord**, or **WhatsApp** — it can read and write files, run shell commands, search the web, control hardware, and remember things across conversations.
 
 Built on [Google ADK](https://github.com/google/adk-python) and [LiteLLM](https://github.com/BerriAI/litellm), so it works with any LLM provider (Anthropic, OpenAI, Google, Groq, and more).
 
@@ -32,6 +32,8 @@ Inspired by [OpenClaw](https://github.com/pydantic/openclaw), [Nanobot](https://
 ## Installation
 
 **Requirements:** Python 3.11+
+
+> **Edge-device friendly:** HuxBot runs on boards like the Arduino UNO Q, Raspberry Pi, and Orange Pi. No Mac Mini required — a 2 GB board with Debian Linux is all you need. The lightweight dependency footprint keeps memory free for the agent and hardware control.
 
 ```bash
 git clone https://github.com/yourusername/huxbot.git
@@ -185,26 +187,6 @@ huxbot gateway
 
 Messages sent to your WhatsApp number will now be handled by HuxBot.
 
-## Web Chat UI
-
-Chat with HuxBot in the browser using the built-in Streamlit interface:
-
-```bash
-huxbot chat
-```
-
-This opens a web chat at `http://localhost:8501`. Use `--port` to change the port:
-
-```bash
-huxbot chat --port 9000
-```
-
-You can also run it directly with Streamlit:
-
-```bash
-streamlit run $(python -c "from pathlib import Path; import huxbot; print(Path(huxbot.__file__).parent / 'ui' / 'app.py')")
-```
-
 ## Built-in Tools
 
 | Tool | Description |
@@ -329,7 +311,6 @@ huxbot/
 │   ├── hardware/       # Arduino/ESP32 board control (serial & network)
 │   ├── tools/          # Built-in tools (filesystem, shell, web, messaging, hardware)
 │   ├── skills/         # Built-in skills
-│   ├── ui/             # Streamlit web chat interface
 │   └── utils/          # Helpers
 ├── workspace/          # Default workspace templates
 └── tests/
@@ -342,7 +323,6 @@ huxbot onboard              # Initialize config and workspace
 huxbot agent -m "message"   # Send a single message
 huxbot agent                # Interactive chat mode
 huxbot gateway              # Start channels + message processor
-huxbot chat                 # Open web chat UI in browser
 huxbot status               # Show configuration status
 ```
 

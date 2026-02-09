@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import asyncio
-import subprocess
 from pathlib import Path
 
 import typer
@@ -196,18 +195,6 @@ def gateway() -> None:
 
     asyncio.run(_run())
 
-
-# ---------------------------------------------------------------------------
-# chat
-# ---------------------------------------------------------------------------
-
-@app.command()
-def chat(
-    port: int = typer.Option(8501, "--port", "-p", help="Port for the Streamlit server"),
-) -> None:
-    """Open the HuxBot chat UI in the browser."""
-    app_path = str(Path(__file__).parent.parent / "ui" / "app.py")
-    subprocess.run(["streamlit", "run", app_path, "--server.port", str(port)])
 
 
 # ---------------------------------------------------------------------------
