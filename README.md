@@ -14,7 +14,7 @@
 
 A lightweight personal AI assistant designed to run on edge devices like the **Arduino UNO Q**, **Raspberry Pi**, and **Orange Pi**. You don't need a Mac Mini — just a small board with 2 GB of RAM running Debian Linux is enough. Talk to it on **Telegram**, **Discord**, or **WhatsApp** — it can read and write files, run shell commands, search the web, control hardware, and remember things across conversations.
 
-Built on [Google ADK](https://github.com/google/adk-python) and [LiteLLM](https://github.com/BerriAI/litellm), so it works with any LLM provider (Anthropic, OpenAI, Google, Groq, and more).
+Built on [Google ADK](https://github.com/google/adk-python) and [LiteLLM](https://github.com/BerriAI/litellm), so it works with any LLM provider (Anthropic, OpenAI, Google, Grok, and more).
 
 Inspired by [OpenClaw](https://github.com/pydantic/openclaw), [Nanobot](https://github.com/nano-bot/nanobot), and named after [Huitzilopochtli](https://en.wikipedia.org/wiki/Huitzilopochtli) — the Aztec god of sun and war.
 
